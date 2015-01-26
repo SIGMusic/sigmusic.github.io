@@ -1,0 +1,74 @@
+<html>
+<head>
+<title>Tacchi - SigMusic ACM@UIUC</title>
+<link rel="stylesheet" href="css/style.css" type="text/css" media="screen" />
+</head>
+<body>
+    <div id="page">
+        <div id="header"><a href="/sigmusic/"><img src="tacchimedia/tacchi3.png" alt="SigMusic"></a></div>
+        <div class="topblock"><h2>Tacchi</h2>
+            <div class="block"><h3>What it is</h3>
+                <div id="headerblock" style="margin: 20px;">
+                    <img src="tacchimedia/tacchi1.jpg" class="headerimage" style="margin: 3px" />
+                    <span style="text-align: right; font-size: 10px;">Photocredit Jessica Metro</span>
+                </div>
+                Tacchi is SigMusic's 46" fully multitouch table.  Complete with 2 cameras and 4 lazers, Tacchi is capable of unlimited users. SigMusic first unveiled Tacchi at Engineering Open House in 2010, winning "Best Undergraduate Student Research" as well as the Lockheed Martin Computer Science Award.  Tacchi was constructed over a period of 4 months, starting from commodity hardware components.        </div> 
+            <div class="block"><h3>How it works</h3>
+                Tacchi works by the Laser Light Plane Illumination technique.  More information can be found <a href="http://wiki.nuigroup.com/Laser_Light_Plane_Illumination_(LLP)">at the NUIGroup Wiki</a>.  Simply put: The lasers on top are ran through a line generator, turning them into a single plane of infrared light.  By placing the plane just above the screen, your fingers interrupt it when you touch the screen.  This lights up your fingers, which pass through the screen below, to the cameras.  Since the cameras can only see infrared light, there is little interference from the backlight or other lights (But still some at all.  Emergency floodlights tend to be problematic as well).  Using simple and free software, we turn the camera feed into abstract TUIO coordinates, which can be passed to any application to use.
+
+                <img src="tacchimedia/Llp1.jpg" width="624" class="blockimage" />
+            </div>
+            <div class="block"><h3>See it in action</h3>
+                <object style="height: 390px; width: 640px"><param name="movie" value="http://www.youtube.com/v/wi_88mx83CE?version=3"><param name="allowFullScreen" value="true"><param name="allowScriptAccess" value="always"><embed src="http://www.youtube.com/v/wi_88mx83CE?version=3" type="application/x-shockwave-flash" allowfullscreen="true" allowScriptAccess="always" width="640" height="390"></object>
+            </div>
+            <div class="block"><h3>Parts</h3>
+                Tacchi is constructed using the following:
+                <ul><li>46" LCD HDTV</li>
+                    <li>2 Playstation Eye Cameras, with infrared filters </li>
+                    <li>4 infrared lasers, with line generators</li>
+                    <li>Standard PC (quad core, 8gb ram)</li>
+                    <li>Acrylic Glass covering</li>
+                    <li>Custom casing (plywood, paint, elbow grease)<li>
+                </ul>
+            </div>
+
+            <div class="block"><h3>Construction</h3>
+                A full length discussion on the details of construction can be found elsewhere, but a simple explanation is as follows:
+                <br>
+                <p><h4>Step One</h4> Separate the TV from the case, and the backlight from the LCD panel (They are both VERY fragile)
+                </p>
+                <img src="tacchimedia/tacchi-31.jpg" width="624" class="blockimage" />
+                <img src="tacchimedia/tacchi-35.jpg" width="624" class="blockimage" />
+                <p><h4>Step Two</h4>Remove the IR Blocker from the webcams, replacing them with IR-Pass filters 
+                </p>
+                <p><h4>Step Three</h4>Assemble a box to put the LCD, backlight, lasers, and cameras 
+                </p>
+                <img src="tacchimedia/makignit/tacchi-100.jpg" width="624" class="blockimage" />
+                <p><h4>Step Four</h4>Place Plexiglass on top of table, then place LCD on top of that.  Mount Television components somewhere convenient, and place backlight near the bottom of the case (but leaving room for the computer) 
+                </p>
+                <img src="tacchimedia/makignit/tacchi-102.jpg" width="624" class="blockimage" />
+                <p><h4>Step Five</h4>Place computer at the bottom of the case
+                </p>
+                <img src="tacchimedia/makignit/tacchi-105.jpg" width="624" class="blockimage" />
+                <p><h4>Step Six</h4>Place cameras on top of backlight
+                </p>
+                <img src="tacchimedia/makignit/tacchi-104.jpg" width="624" class="blockimage" />
+                <p><h4>Step Seven</h4>Mount lasers on top of the screen, just above the LCD
+                </p>
+                <p><h4>Step Eight</h4>Finish construction of table
+                </p>
+                <img src="tacchimedia/makignit/tacchi-101.jpg" width="624" class="blockimage" />
+                <p><h4>Step Nine</h4>Install a <a href="http://www.tuio.org/?software">TUIO Tracker</a>, configure cameras
+                </p>
+                <img src="tacchimedia/makignit/tacchi-106.jpg" width="624" class="blockimage" />
+                <img src="tacchimedia/makignit/tacchi-103.jpg" width="624" class="blockimage" />
+
+                <p><h4>Step Ten</h4>Write software on top of it!
+                </p>
+                <img src="tacchimedia/dan_freedman_2.jpg" width="624" class="blockimage" />
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>

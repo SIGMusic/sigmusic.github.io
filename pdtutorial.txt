@@ -1,0 +1,94 @@
+Pure Data - what is it?
+	Graphical Flow programming language designed for sound production
+	Sibling to Max/MSP and Reaktor
+	control and audio signals 'flow' through the patches
+	Techincally turing complete (-ish...)
+
+Why should I care?
+	Super easy to use
+	Super powerful
+	Modular
+	Highly cross-platform, with a wee bit of work.
+	you might even learn a thing or two about audio engineering.
+
+
+Cool. 
+	let's make some noise.
+
+
+Gettin some PD
+	download pd-extended ( http://puredata.info/downloads/pd-extended )
+	install it and open it.
+	You should see a window with a bunch of logging output and buttons.
+	
+Hello PD
+	go to file->new
+	wow. what an empty window.
+	Let's put an object there.  Put->Object (there'a shortcut too)
+	a dashed box should follow your cursor. put it somewhere nice.
+	let's make this box: type in 'osc~ 440'
+	it should become a solid box now, with grey tabs at the top and bottom
+	What did we just do?
+
+Objects in Pure Data
+	So the main things in Pure Data that flow are Objects.
+	Lack of a good UI means you simply type in the names of them
+	osc~ cos~ dac~ phasor~ + - * line mtof send receive trigger pack unpack
+	They are the elements that'll compose your patch.  They operate on data.
+	right-click an empty spot and select 'help' for more stuff.
+
+Back to PD
+	so we created this fancy osc~ object. but we hear no sine waves.
+	of course. it's being generated into nothingness.
+	create a new object, call it 'dac~'
+	two grey tabs should appear at the top of it
+	drag the bottom grey tab of osc~ and connect it to one of them
+	still. nothing.  that's because we're not computing audio yet.
+
+PLUG IN YOUR HEADPHONES NOW.
+	ok. ready? turn your volume down pretty low.
+	now go to the logging box and click the 'compute audio' or 'dsp on' box
+	you should hear a sweet sine wave at 440 hertz. in one ear.
+	drag another line from the same tab on osc~ to the other tab of dac~.
+	now uncheck compute audio before your ears bleed.
+
+Changing Tunes
+	go to put and select hslider
+	connect the bottom tab of it (hard to see) to the first input of osc~
+	exit edit mode (edit -> edit mode) and wiggle around the slider a bit
+	cool. now turn on compute audio again. it should be epic low.
+
+Control Lines and Audio Lines
+	audio lines (thick lines) works at sample level - 44100 a second or so.
+	control lines (thin lines) work at the PD-Tick level - every 20 ms or so.
+	grey tabs indicate audio signals, white tabs indicate control lines.
+	objects that end in '~' tend to be the signal-level version of the object
+	Don't mix and match. even though we already did.
+	sometimes called 'signal level' vs 'control level'
+
+Midi to frequency
+	why is the slider so low? What values does it spit out?
+	enter back into edit mode (just assume enter and exit from now on)
+	make a print object 'print' and plug the slider into it. spin the slider.
+	check back in the log console. you should see a bunch of numbers from 1-127
+	those make low frequencies. what has 127 values? Midi!
+	make a new object 'mtof' - short for Midi to Frequency
+	remove the connection from the slider to osc~, and plug the slider into mtof
+	make a new object 'sig~' this holds control values as audio values.
+	plug mtof into sig~ and sig~ into osc~
+	turn on the DSP/compute audio, and play with that slider! Wheeee!
+
+Turn it up! (well... actually down)
+	Make a volume slider.  make a hslider, '/ 127' object, and '*~ 1' object.
+	connect hslider to '/ 127', and that to the control side of '*~ 1'.
+	intercept the audio to the dac~.  delete those lines, put them through '*~'
+	make sure everything is hooked up. enjoy.
+
+Multiple inputs and outputs
+	Objects tend to have many inputs and outputs, 'inlets' and 'outlets'
+	The convention is for the inlets to correspond with the parameters.
+	'/ 127' has two inlets.  so (inlet one / inlet two).  
+	we gave 127 as a parameter so it'll be the default until that inlet gets 
+		another signal.
+	
+

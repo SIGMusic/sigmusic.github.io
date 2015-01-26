@@ -1,0 +1,33 @@
+html, body {
+    height: 100%;
+    min-height: 100%
+    width: 100%;
+    margin: 0;
+}
+
+.video-js {
+    z-index: -1;
+    background-color: black;
+    position: fixed;
+}
+
+.mus-main {
+    color: white;
+    height: 100%;
+    text-align: center;
+}
+
+.mus-banner {
+    z-index: 4;
+    width: 150px;
+    height: 150px;
+    position:fixed;
+    top: 0;
+    right: 0;
+}
+
+.shadow {
+    -webkit-text-shadow: -1px 0 1px #000, 1px 0 1px #000, 0 -1px 1px #000, 0 1px 1px #000;
+    -moz-text-shadow: -1px 0 1px #000, 1px 0 1px #000, 0 -1px 1px #000, 0 1px 1px #000;
+    text-shadow: -1px 0 1px #000, 1px 0 1px #000, 0 -1px 1px #000, 0 1px 1px #000;
+}

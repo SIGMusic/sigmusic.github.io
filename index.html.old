@@ -1,0 +1,17 @@
+<html>
+<head>
+<title>SigMusic ACM@UIUC</title>
+</head>
+<body>
+<p><img src="logo.jpg" width="400" height="174" alt="SigMusic">
+<p>SigMusic is dedicated to the study and production of electronic and computer music. We also collaborate with <a href="http://www.acm.uiuc.edu/siggraph/">SIGGRAPH</a> in producing <a href="http://www.acm.uiuc.edu/siggraph/soundsandvisions.htm">Sounds and Visions</a>. To keep informed of our current activities, subscribe to our <a href="http://www.acm.uiuc.edu/mailman/listinfo/sigmusic-l">mailing list</a>.</p>
+<h2>2007-2008</h2>
+<a href="in-c.pdf"><img src="in-c.jpeg" alt="In C" align="right"></a>
+<p>Activities included a listening/show-and-tell session, a tutorial on Linux music software and <a href="http://www.puredata.info">Pure Data</a>, and an EOH project: "In C".</p>
+<p>"In C (in Python)" is a computer program that simulates a group of musicians playing <a href="http://en.wikipedia.org/wiki/In_C">"In C"</a>, the classic minimalist piece by <a href="http://en.wikipedia.org/wiki/Terry_Riley">Terry Riley</a>. We have released the <a href="in-c.tar.gz">source code</a> to this project.</p>
+<h2>2006-2007</h2>
+<p>EOH project: "Robotic Orchestra". We attempted to create a MIDI-controlled recorder quartet. Lessons learned: don't attempt to wire up a board for the PIC microcontroller from scratch -- just use something like the <a href="http://arduino.cc">Arduino</a> instead.</p>
+<h2>2005-2006</h2>
+<p>EOH project: "Turing and the Wolf". We wrote a computer program that automatically generates chord progressions to transition from one piece of music to another.</p>
+</body>
+</html>
