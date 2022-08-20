@@ -1,0 +1,9 @@
+<!DOCTYPE html>
+<html lang="{{ $.Site.LanguageCode | default "en" }}">
+  <body class="dark-theme">
+    <main role="main">
+      {{ block "main" . }}{{ end }}
+      {{ block "feed" . }}{{ end }}
+    </main>
+  </body>
+</html>
