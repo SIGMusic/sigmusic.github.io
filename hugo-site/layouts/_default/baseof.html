@@ -1,9 +1,12 @@
 <!DOCTYPE html>
 <html lang="{{ $.Site.LanguageCode | default "en" }}">
+  {{ partial "head" }}
   <body class="dark-theme">
     <main role="main">
+      {{ partial "navbar" . }}
       {{ block "main" . }}{{ end }}
       {{ block "feed" . }}{{ end }}
     </main>
   </body>
+  {{ partial "footer" }}
 </html>
