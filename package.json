@@ -1,0 +1,24 @@
+{
+  "name": "sigmusic",
+  "version": "0.0.1",
+  "description": "An ACM SIG dedicated to computers and music",
+  "repository": {
+    "url": "https://github.com/SIGMusic/sigmusic.github.io"
+  },
+  "scripts": {
+    "dev:design": "node-sass --watch ./sass/styles.scss ./hugo-site/static/styles.css",
+    "dev:hugo": "cd hugo-site && hugo server --disableFastRender",
+    "dev": "concurrently \"npm run dev:hugo\" \"npm run dev:design\"",
+    "build:design": "node-sass --output-style compressed ./sass/styles.scss ./hugo-site/static/styles.css",
+    "build:hugo": "cd hugo-site && hugo",
+    "build": "rm -rf public && npm run build:design && npm run build:hugo",
+    "reset": "rm -rf ./node_modules ./package-lock.json && npm install && npm run dev"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "GPL-3.0-or-later",
+  "devDependencies": {
+    "concurrently": "latest",
+    "node-sass": "latest"
+  }
+}
