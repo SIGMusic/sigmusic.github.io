@@ -1,0 +1,26 @@
+$header-font-stack: roboto-mono, monospace;
+$header-font-size: 18px;
+$body-font-stack: opensans, sans-serif;
+$body-font-size: 14px;
+
+$max-content-width: 900px;
+
+$background-color: #F0D592;
+$accent-color-1: #6DA3BB;
+$accent-color-2: #CF8A15;
+$accent-color-3: #CA171D;
+
+@mixin primary-font-style($color: black) {
+  font-family: $header-font-stack;
+  color: $color;
+  font-size: $header-font-size;
+  font-weight: bold;
+}
+
+@mixin secondary-font-style($color: black) {
+  font-family: $body-font-stack;
+  color: $color;
+  font-size: $body-font-size;
+}
+
+

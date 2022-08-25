@@ -1,0 +1,33 @@
+@import "../utils/global-constants";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.content-container {
+  flex: 1;
+  min-height: 400px;
+  margin: auto;
+  max-width: $max-content-width;
+  padding: 5px;
+  width: 96%;
+  margin-top: 30px;
+  margin-bottom: 40px;
+  border-radius: 1%;
+}
+
+h1 h2 h3 {
+  @include primary-font-style;
+}
+
+body {
+  @include secondary-font-style;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+

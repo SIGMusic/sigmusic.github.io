@@ -1,0 +1,53 @@
+@import "../utils/global-constants";
+
+$navbar-height: 60px;
+$navbar-margin-sides: 5%;
+$navbar-column-gap: 20px;
+$logo-width: 25%;
+
+.navbar {
+  width: 100%;
+  height: $navbar-height;
+  background-color: $background-color;
+}
+
+.navbar-container {
+  margin: auto;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  max-width: $max-content-width;
+}
+
+#nav-grid {
+  top: 50%;
+  display: grid;
+  column-gap: $navbar-column-gap;
+  margin-left: $navbar-margin-sides;
+  max-width: 100% - 2 * $navbar-margin-sides - $logo-width;
+  grid-auto-flow: column;
+}
+
+.navbar-item {
+  display: block;
+  text-align: center;
+  max-width: auto;
+}
+
+a {
+  color: $accent-color-1;
+}
+
+.nav-logo-container {
+  margin-left: auto;
+  max-width: $logo-width;
+  margin-right: $navbar-margin-sides;
+}
+
+.nav-logo {
+  height: auto;
+  max-height: $navbar-height;
+  width: 100%;
+}
+

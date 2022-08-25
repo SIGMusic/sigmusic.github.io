@@ -6,10 +6,10 @@
     "url": "https://github.com/SIGMusic/sigmusic.github.io"
   },
   "scripts": {
-    "dev:design": "node-sass --watch ./sass/styles.scss ./hugo-site/static/styles.css",
-    "dev:hugo": "cd hugo-site && hugo server --disableFastRender",
+    "dev:design": "node-sass --watch --output-style compressed -o ./hugo-site/static/ ./sass",
+    "dev:hugo": "cd hugo-site && hugo server --forceSyncStatic=true",
     "dev": "concurrently \"npm run dev:hugo\" \"npm run dev:design\"",
-    "build:design": "node-sass --output-style compressed ./sass/styles.scss ./hugo-site/static/styles.css",
+    "build:design": "node-sass --output-style compressed ./sass/styles.scss > ./hugo-site/static/styles.css",
     "build:hugo": "cd hugo-site && hugo",
     "build": "rm -rf public && npm run build:design && npm run build:hugo",
     "reset": "rm -rf ./node_modules ./package-lock.json && npm install && npm run dev"
