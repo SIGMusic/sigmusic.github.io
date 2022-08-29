@@ -68,3 +68,5 @@ Temporary Items
 hugo-site/static/styles.css
 package-lock.json
 node_modules
+hugo-site/public
+public
