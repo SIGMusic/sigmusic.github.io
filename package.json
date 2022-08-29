@@ -6,7 +6,7 @@
     "url": "https://github.com/SIGMusic/sigmusic.github.io"
   },
   "scripts": {
-    "dev:design": "node-sass --watch --output-style compressed -o ./hugo-site/static/ ./sass",
+    "dev:design": "npm run build:design && node-sass --watch --output-style compressed -o ./hugo-site/static/ ./sass",
     "dev:hugo": "cd hugo-site && hugo server --forceSyncStatic=true",
     "dev": "concurrently \"npm run dev:hugo\" \"npm run dev:design\"",
     "build:design": "node-sass --output-style compressed ./sass/styles.scss > ./hugo-site/static/styles.css",
