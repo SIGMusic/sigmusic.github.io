@@ -1,0 +1,13 @@
+@import "../utils/global-constants";
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 0;
+  bottom: 0;
+  min-height: $footer-min-height;
+  width: 100%;
+  background-color: $background-color;
+  text-align: center;
+}

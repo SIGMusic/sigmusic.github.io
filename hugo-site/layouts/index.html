@@ -1,10 +1,16 @@
 {{ define "main" }}
 <main aria-role="main">
-  <header class="homepage-header">
-  <h1>{{.Title}}</h1>
-  </header>
-  <div class="homepage-content">
-    {{.Content}}
+  <div class="homepage-content-aligner">
+    <div id="main-intro-box">
+      {{.Content}}
+      <p id="meeting-info">
+        <b>{{ $.Site.Data.meetingstring | default "TBD" }}</b>
+      </p>
+      <div id="add-to-calendar">
+        <a href="{{ $.Site.Data.icallink }}" target="_blank">Add to your calendar</a>
+      </div>
+    </div>
+    <img id="cover-image" src="cover.png">
   </div>
 </main>
 {{ end }}

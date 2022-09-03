@@ -4,7 +4,7 @@
   <body class="dark-theme">
     <main role="main">
       {{ partial "navbar" . }}
-      <div class="content-container">
+      <div class="content-container {{ $.Type }}">
         {{ block "main" . }}{{ end }}
       </div>
       {{ block "feed" . }}{{ end }}

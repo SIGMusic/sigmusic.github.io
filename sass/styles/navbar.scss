@@ -1,13 +1,12 @@
 @import "../utils/global-constants";
 
-$navbar-height: 60px;
 $navbar-margin-sides: 5%;
 $navbar-column-gap: 20px;
 $logo-width: 25%;
 
 .navbar {
   width: 100%;
-  height: $navbar-height;
+  height: $navbar-min-height;
   background-color: $background-color;
 }
 
@@ -47,7 +46,7 @@ a {
 
 .nav-logo {
   height: auto;
-  max-height: $navbar-height;
+  max-height: $navbar-min-height;
   width: 100%;
 }
 
