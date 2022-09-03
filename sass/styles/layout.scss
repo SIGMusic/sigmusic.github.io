@@ -19,6 +19,12 @@
   border-radius: 1%;
 }
 
+@media screen and (max-width: $max-content-width) {
+  .content-container {
+    max-width: $max-content-width / 2 - 20;
+  }
+}
+
 h1 h2 h3 {
   @include primary-font-style;
 }
