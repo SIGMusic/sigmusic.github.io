@@ -1,0 +1,9 @@
+{{ define "main" }}
+
+<div id="chair-boxes-container">
+    <h2>{{ .Title }}</h2>
+    {{ with .Params.featured_image }}<img src="{{ . }}">{{ end }}
+    <p>{{ .Content }}</p>
+</div>
+
+{{ end }}
