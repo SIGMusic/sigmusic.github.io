@@ -1,8 +1,10 @@
 @import "../utils/global-constants";
 
+$box-width: 200px;
+
 li {
     display: inline-block;
-    width: 200px;
+    width: $box-width;
     height: 125px;
     border: 1px solid #000;
     text-align: center;
@@ -11,4 +13,11 @@ li {
     background-color: $background-color;
 
     font-size: $header-font-size;
+}
+
+li:hover {
+    // make the list item larger when hovered over
+    width: $box-width * 1.2;
+    // make the list item glow when hovered over
+    box-shadow: 0 0 10px $accent-color-2;
 }
