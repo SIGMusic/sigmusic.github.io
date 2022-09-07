@@ -1,5 +1,20 @@
 {{ define "main" }}
-<h1>
-  TEST
-</h1>
+
+<div id="about-section-container">
+  {{.Content}}
+  <div id="chair-information-container">
+    <h2>Chairs</h2>
+    <!-- <div id="chair-boxes-container">
+      {{ range .Site.RegularPages }}
+        {{ if eq .Type "chair-boxes" }}
+          <div class="chair-box">
+            <h3>{{ .Title }}</h3>
+            {{ with .Params.featured_image }}<img src="{{ . }}">{{ end }}
+            <p>{{ .Content }}</p>
+          </div>
+        {{ end }}
+      {{ end }}
+    </div> -->
+  </div>
+</div>
 {{ end }}
