@@ -1,0 +1,26 @@
+@import "../utils/global-constants";
+
+.chair-box {
+    display: inline-block;
+    justify-content: center;
+    border: 3px solid $accent-color-3;
+    width: 200px;
+    height: 400px;
+    margin: 10px;
+    padding: 15px;
+    align-items: center;
+    text-align: center;
+}
+// .chair-boxes {
+//     display: flex;
+//     flex-wrap: wrap;
+//     justify-content: center;
+//     margin: 10px;
+// }
+
+.chair-boxes-container {
+    // display: flex;
+    // flex-wrap: wrap;
+    justify-content: center;
+    // margin: 10px;
+}

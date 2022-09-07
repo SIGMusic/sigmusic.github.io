@@ -1,0 +1,7 @@
+@import "../utils/global-constants";
+
+.chair-boxes-container {
+    display: flex;
+    flex-direction: row;
+    border: 3px solid $accent-color-3;
+}
