@@ -1,15 +1,21 @@
 @import "../utils/global-constants";
 
 .chair-box {
-    display: inline-block;
+    // display: inline-block;
     justify-content: center;
     border: 3px solid $accent-color-3;
-    width: 200px;
+    width: 300px;
     height: 400px;
-    margin: 10px;
-    padding: 15px;
+    margin: 5px;
+    padding: 17px;
     align-items: center;
     text-align: center;
+    background-color: #efa692;
+    h3 {
+        font: 20px $header-font-stack;
+    }
+    font: opensans, sans-serif;
+    
 }
 // .chair-boxes {
 //     display: flex;
@@ -18,9 +24,11 @@
 //     margin: 10px;
 // }
 
-.chair-boxes-container {
+.chair-information-container {
     // display: flex;
+    // flex-direction: row;
     // flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
     // margin: 10px;
 }

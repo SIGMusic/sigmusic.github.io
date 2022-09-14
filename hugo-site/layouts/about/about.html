@@ -4,7 +4,7 @@
   {{.Content}}
   <div id="chair-information-container">
     <h2>Chairs</h2>
-    <div id="chair-boxes-container">
+    <div id="chair-boxes-container" style="display: flex;flex-direction: row;">
       {{ range .Site.RegularPages }}
         {{ if eq .Type "chair-boxes" }}
           <div class="chair-box">
